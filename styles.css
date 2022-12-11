@@ -1,0 +1,258 @@
+body {
+    background-color: #009688;
+    font-family: 'Oswald', sans-serif;
+}
+
+#mainScreen {
+    text-align: center;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: block;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.14), 0 7px 7px 0 rgba(0, 0, 0, 0.2), 0 7px 7px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+#welcomeScreen {
+    text-align: center;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: none;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.14), 0 7px 7px 0 rgba(0, 0, 0, 0.2), 0 7px 7px 0 rgba(0, 0, 0, 0.12);
+}
+
+#sudokuScreen {
+    width: 1000px;
+    height: 1000px;
+    text-align: center;
+
+    background-color: #d4fffb;
+    border-radius: 10px;
+
+    margin: 0 auto;
+
+
+    display: none;
+
+}
+
+#start-btn {
+    margin-top: 50px;
+
+}
+
+#reset {
+    width: 100px;
+    height: 80px;
+}
+
+
+h1 {
+    color: #dfecea;
+    white-space: nowrap;
+    font-size: 48px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+        1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+        5px 13px 15px black;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+
+
+.input {
+    width: 76%;
+    color: rgb(20, 29, 34);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(62, 58, 58, 0.04);
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.buttonLogin {
+    color: #fff;
+    background-color: #009688;
+
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    padding: 3%;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+
+}
+
+.buttonLogin:hover {
+    background-color: #054741;
+    color: #fff;
+}
+
+.buttonLogin:focus {
+    outline: 0;
+    background-color: #06564e;
+}
+
+.button {
+    color: #fff;
+    background-color: #009688;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    padding: 3%;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.button:hover {
+    background-color: #0b5f57;
+    color: #fff;
+}
+
+.button:focus {
+    outline: 0;
+    background-color: #043b36;
+}
+
+
+.radio {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: none;
+    border: 0;
+    box-shadow: inset 0 0 0 1px;
+    box-shadow: inset 0 0 0 1.5px;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+
+
+    pointer-events: none;
+
+
+
+}
+
+label {
+    margin-left: 34px;
+    flex-direction: row;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    font-style: bold;
+
+}
+
+.radio:focus {
+    outline: none;
+}
+
+.radio:checked {
+    box-shadow: inset 0 0 0 6px;
+}
+
+
+
+
+
+#game {
+
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 700px;
+    margin-left: 15%;
+    background-color: rgb(255, 252, 252);
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+#board {
+    width: 700px;
+    height: 700px;
+    background-color: #e1fffc;
+
+    margin-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.box {
+
+
+    border: 1px solid black;
+    width: 74px;
+    height: 74px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 53px;
+    border-radius: 7px;
+
+
+}
+
+p.selected {
+    background-color: #b26fc8;
+
+}
+
+p.incorrect {
+    color: red;
+}
+
+.rightBorder {
+    border-right: 4px solid black;
+
+}
+
+.bottomBorder {
+    border-bottom: 4px solid black;
+
+}
+
+#number-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}

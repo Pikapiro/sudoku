@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sudoku</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/icons8-d-100.png">
+
+</head>
+
+
+
+<body>
+    <div id="mainScreen">
+
+        <h1 id="titleFirstScreen">sodoku</h1>
+
+        <form name="login">
+            <input class="input" type="text" name="userid" id="userid" placeholder="Username" />
+            <input class="input" type="password" name="pswrd" id="pswrd" placeholder="Password" />
+            <br>
+            <br>
+            <br>
+            <input class="buttonLogin" type="button" onclick="check(this.form)" value="Login" />
+            <input class="buttonLogin" type="reset" value="Cancel" />
+
+        </form>
+
+
+    </div>
+
+
+
+    <div id="welcomeScreen">
+        <h1 id="titleWelcomeScreen"> welcome </h1>
+        <h4> please choose level of difficulty</h4>
+
+
+
+
+
+
+        <label for="diff-1">
+            <input class="radio" id="diff-1" type="radio" name="diff" value="easy" checked>
+            <span>Easy</span>
+        </label>
+        <label for="diff-2">
+            <input class="radio" id="diff-2" type="radio" name="diff" value="medium">
+            <span>Medium</span>
+        </label>
+        <label for="diff-3">
+            <input class="radio" id="diff-3" type="radio" name="diff" value="hard">
+            <span>Hard</span>
+        </label>
+        <br>
+        <button class="buttonLogin" id="start-btn" onclick="startGame()">start</button>
+
+
+
+    </div>
+
+    <div id="sudokuScreen">
+
+
+
+        <h1> sodoku </h1>
+
+
+        <div id="game">
+            <div id="board"></div>
+
+        </div>
+        <div id="number-container">
+            <p class="button" id="one">1</p>
+            <p class="button" id="two">2</p>
+            <p class="button" id="three">3</p>
+            <p class="button" id="four">4</p>
+            <p class="button" id="five">5</p>
+            <p class="button" id="six">6</p>
+            <p class="button" id="seven">7</p>
+            <p class="button" id="eight">8</p>
+            <p class="button" id="nine">9</p>
+
+        </div>
+        <button id="reset" class="button" onclick="reset()"> reset </button>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+
+</html>
